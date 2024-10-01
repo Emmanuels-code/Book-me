@@ -1,0 +1,36 @@
+.book-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.book-info {
+    flex-grow: 1;
+}
+
+.book-info h3 {
+    margin: 0 0 10px 0;
+}
+
+.book-info p {
+    margin: 5px 0;
+    color: #666;
+}
