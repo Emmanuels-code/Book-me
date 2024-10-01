@@ -1,3 +1,4 @@
+/* App container styling */
 .App {
   text-align: center;
 }
@@ -32,7 +33,78 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Book List Styling */
+.book-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-list h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.book-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Book Item Styling */
+.book-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-cover {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.book-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.book-info h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.book-info p {
+  color: #555;
+  margin: 0 0 5px;
+}
+
+.book-info p:last-child {
+  font-style: italic;
+  color: #888;
+}
+
+/* Loading and error states */
+.loading,
+.error {
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 20px;
 }
