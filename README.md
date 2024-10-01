@@ -32,7 +32,7 @@ You can view a live demo of the project here: [Link to live demo (if hosted)].
 1. **Clone the repository:**
 
 ```bash
-   git clone https://github.com/yourusername/book-for-me.git
+   git clone https://github.com/Emmanuels-code/book-for-me.git
    cd book-for-me
 ```
 2. **Install dependencies:**
