@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Book-For-Me: Book Recommender
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Book-For-Me** is a web application that recommends books based on selected genres and page counts. The app fetches book recommendations from an external API and presents them in an intuitive, user-friendly interface. Users can explore book details such as title, author, summary, and reviews.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Select book categories (genres) and page counts to filter recommendations.
+- Displays book recommendations with title, author, summary, and cover image.
+- Responsive and clean UI with easy navigation.
+- Integrates with a third-party API for fetching book recommendations.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can view a live demo of the project here: [Link to live demo (if hosted)].
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack
 
-### `npm test`
+- **Frontend:** React.js, Redux Toolkit, React Router
+- **API:** RapidAPI for book recommendations
+- **Styling:** CSS Grid, Flexbox
+- **Build tool:** Create React App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps to Install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
 
-### `npm run eject`
+```bash
+   git clone https://github.com/yourusername/book-for-me.git
+   cd book-for-me
+```
+2. **Install dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+``` bash
+npm install
+```
+3. **Create a .env file and add your RapidAPI key:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+``` makefile
+REACT_APP_RAPIDAPI_KEY=your_rapidapi_key
+```
+4. **Start the development server:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+``` bash
+    npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Select a category (genre) on the homepage.
+    Choose a page count range on the next screen.
+    View book recommendations based on your selected category and page count.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## API Integration
 
-### Code Splitting
+This app uses the Book Information Library API to fetch book recommendations based on the selected genre (category).
+API Request Example
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
