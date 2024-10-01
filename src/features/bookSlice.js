@@ -7,12 +7,15 @@ export const fetchBooks = createAsyncThunk(
     async ({ category }) => {
         const genre = category;  // Mapping category to genre
 
+        const rapidApiKey = process.env.REACT_APP_RAPIDAPI_KEY;
+        const rapidApiHost = process.env.REACT_APP_RAPIDAPI_HOST;
+
         try {
-            const response = await fetch(`https://book-information-library.p.rapidapi.com/api/books/book-recommendations?genre=${genre}`, {
+            const response = await fetch(`https://${rapidApiHost}/api/books/book-recommendations?genre=${genre}`, {
                 method: 'GET',
                 headers: {
-                    'x-rapidapi-key': '2644d53ae6mshc03c0e51c623db7p1c7ed5jsn6abd9047e7cb',
-                    'x-rapidapi-host': 'book-information-library.p.rapidapi.com',
+                    'x-rapidapi-key': rapidApiKey,
+                    'x-rapidapi-host': rapidApiHost,
                 },
             });
 
@@ -21,7 +24,7 @@ export const fetchBooks = createAsyncThunk(
             }
 
             const data = await response.json();
-            console.log(data.toString());
+            console.log(data);
             if (data && data.recommendations) {
                 return data.recommendations.slice(0, 10);  // Return first 10 results
             } else {
