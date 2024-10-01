@@ -63,4 +63,9 @@ REACT_APP_RAPIDAPI_KEY=your_rapidapi_key
 This app uses the Book Information Library API to fetch book recommendations based on the selected genre (category).
 API Request Example
 
+## Unsolved Problems
+
+- Filtering Book suggestions by number of Pages
+- Getting and Caching book thumbnails
+
 
